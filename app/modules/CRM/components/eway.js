@@ -1,6 +1,6 @@
 const axios = require('axios');
 const md5 = require('md5');
-class Wrapper {
+module.exports = class Wrapper {
 
     constructor(url, user, pswd, dieOnItemConflict = false) {
         this.url = url;
@@ -43,7 +43,7 @@ class Wrapper {
 
     async getEntity(entity) {
         const res = await this.makeRequest(`Get${entity}`)
-        console.log(res.data);
+        return res.data;
     }
 
     async SearchContacts(findParams) {
@@ -53,8 +53,8 @@ class Wrapper {
     }
 }
 
-const wrapper = new Wrapper('http://109.229.248.143/eway/WcfService/Service.svc/', 'krepkin', 'Repkin33');
+// const wrapper = new Wrapper('http://109.229.248.143/eway/WcfService/Service.svc/', 'krepkin', 'Repkin33');
 // wrapper.SearchContacts({
 // FirstName: 'евгений'
 // });
-wrapper.getEntity('Leads');
+// wrapper.getEntity('Leads');
