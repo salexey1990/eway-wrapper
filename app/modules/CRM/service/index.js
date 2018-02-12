@@ -38,4 +38,22 @@ module.exports = class ServiceEW {
         res.orders = orders;
         return res;
     }
+
+    async getLeadById(id) {
+        const find = {
+            ItemGUID: id
+        }
+        return await wrapper.searchEntity('Leads', find);
+    }
+
+    async getContactById(id) {
+        const find = {
+            ItemGUID: id
+        }
+        return await wrapper.searchEntity('Contacts', find);
+    }
+
+    async webhook(params) {
+        return await wrapper.saveEntity('Lead', params)
+    }
 }

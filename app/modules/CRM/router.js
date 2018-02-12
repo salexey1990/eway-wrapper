@@ -9,5 +9,19 @@ routerEW.get('/leads', async function(req, res) {
   res.send(leads);
 });
 
+routerEW.get('/leads/:id', async function(req, res) {
+  const lead = await controllerEW.getLeadById(req.params.id);
+  res.send(lead);
+})
+
+routerEW.get('/contacts/:id', async function(req, res) {
+  const lead = await controllerEW.getContactById(req.params.id);
+  res.send(lead);
+})
+
+routerEW.get('/webhook', async function(req, res) {
+  const response = await controllerEW.webhook(req.query);
+  res.send(response)
+})
 
 module.exports = routerEW;

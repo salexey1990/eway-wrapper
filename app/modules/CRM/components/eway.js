@@ -51,10 +51,9 @@ module.exports = class Wrapper {
         return res.data;
     }
 
-    async SearchContacts(findParams) {
-        await this.login();
-        const res = await this.makeRequest(`${this.url}/SearchContacts`, findParams);
-        console.log(res.data);
+    async saveEntity(entity, fields) {
+        const res = await this.makeRequest(`Save${entity}`, fields);
+        return res.data;
     }
 }
 
