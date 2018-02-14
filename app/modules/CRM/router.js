@@ -24,4 +24,9 @@ routerEW.get('/webhook', async function(req, res) {
   res.send(response)
 })
 
+routerEW.post('/lead', async function(req, res) {
+  const response = await controllerEW.createLead(req.body);
+  res.send(response);
+});
+
 module.exports = routerEW;

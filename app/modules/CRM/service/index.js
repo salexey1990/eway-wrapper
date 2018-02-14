@@ -66,4 +66,8 @@ module.exports = class ServiceEW {
     async webhook(params) {
         return await wrapper.saveEntity('Lead', params)
     }
+
+    async createLead(params) {
+        return await wrapper.saveEntity('Lead', params)
+    }
 }

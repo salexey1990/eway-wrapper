@@ -56,9 +56,3 @@ module.exports = class Wrapper {
         return res.data;
     }
 }
-
-// const wrapper = new Wrapper('http://109.229.248.143/eway/WcfService/Service.svc/', 'krepkin', 'Repkin33');
-// wrapper.SearchContacts({
-// FirstName: 'евгений'
-// });
-// wrapper.getEntity('Leads');
