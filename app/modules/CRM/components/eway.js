@@ -27,7 +27,17 @@ module.exports = class Wrapper {
             }
         }
 
-        return axios.post(`${this.url}/${url}`, reqParams);
+        const res = await axios.post(`${this.url}/${url}`, reqParams);
+
+        if (res.data.ReturnCode == 'rcBadSession') {
+            await this.login();
+        }
+
+        if (res.data.ReturnCode == 'rcBadSession' || res.data.ReturnCode == 'rcDatabaseTimeout') {
+            return await this.makeRequest(url, params);
+        }
+
+        return res
     }
 
     async login() {
