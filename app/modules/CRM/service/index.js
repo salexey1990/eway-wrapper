@@ -40,7 +40,7 @@ module.exports = class ServiceEW {
                     status: order.StateEn,
                     price: order.Price,
                     cost: null,
-                    roistat: null,
+                    roistat: Number.isInteger(+order.FileAs) ? order.FileAs : null,
                     client_id: order.Customer
                 }
             }
