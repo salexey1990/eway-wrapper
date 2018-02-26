@@ -2,7 +2,7 @@
 
 
     <div class="wrapper wrapper-content clearfix" ng-controller="LeadsController">
-        <!-- <div>
+        <div>
             <div class="row m-b">
                 <div class="form-horizontal">
 
@@ -18,32 +18,9 @@
                 <table ng-table="tableParams" class="table">
                     <tr ng-repeat="item in tableParams.data">
                         <td class="">{{(tableParams.page() - 1) * tableParams.count() + ($index+1)}}</td>
-                        <td title="'Серийный номер'" class="">
-                            <a href="/stationdetails.html?id={{item.chargePointSerialNumber}}" target="_blank">{{item.chargePointSerialNumber}}</a>
-                        </td>
-                        <td title="'Статус'" class="">{{item.status}}</td>
-                        <td title="'Адрес зарядной станции'" class="">
-                            <div ng-if="item.chargePointLat">
-                                <div ng-if="item.address">
-                                    <a 
-                                    href="/stationsmap.html?id={{item._id}}" 
-                                    target="_blank"
-                                    >{{item.address}}</a>
-                                </div>
-                                <div ng-if="!item.address">
-                                    <button class="btn btn-sm btn-danger btn-block"
-                                        ng-click="getAddress(item._id, item.chargePointLat, item.chargePointLon)"
-                                        title="Загрузить адрес"
-                                    >Загрузить адрес</button>
-                                </div>
-                            </div>
-                            <div ng-if="!item.chargePointLat">
-                                Координаты станции отсутствуют
-                            </div>
-                        </td>
+                        <td title="'Статус'" class="">{{item.name}}</td>
                     </tr>
                 </table>
             </div>
-        </div> -->
-        hello world
+        </div>
     </div>

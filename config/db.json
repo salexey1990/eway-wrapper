@@ -1,0 +1,8 @@
+{
+    "username": "root",
+    "database": "supervisor",
+    "host": "localhost",
+    "dialect": "mysql",
+    "password": null,
+    "benchmark": null
+}
