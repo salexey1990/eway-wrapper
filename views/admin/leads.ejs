@@ -18,7 +18,23 @@
                 <table ng-table="tableParams" class="table">
                     <tr ng-repeat="item in tableParams.data">
                         <td class="">{{(tableParams.page() - 1) * tableParams.count() + ($index+1)}}</td>
-                        <td title="'Статус'" class="">{{item.name}}</td>
+                        <td title="'Дата'" class="">{{item.date}}</td>
+                        <td title="'Русурс'" class="">{{item.resource}}</td>
+                        <td title="'Коментарий'" class="">{{item.comment}}</td>
+                        <td title="'Имя'" class="">{{item.name}}</td>
+                        <td title="'Телефон'" class="">{{item.phone}}</td>
+                        <td title="'Почта'" class="">{{item.email}}</td>
+                        <td title="'Промо'" class="">{{item.promo}}</td>
+                        <td title="'Кнопки/действия'" class="col-md-1">
+                        <button class="btn btn-sm btn-success btn-block"
+                                ng-click="createLead(item)"
+                                title="Создать интерес"
+                        >Создать интерес</button>
+                        <button class="btn btn-sm btn-danger btn-block"
+                                ng-click="deleteLead(item)"
+                                title="Удалить"
+                        >Удалить</button>
+                          </td>
                     </tr>
                 </table>
             </div>

@@ -15,4 +15,9 @@ routerSV.get('/list', async function(req, res) {
     res.send(leads);
 });
 
+routerSV.delete('/lead', async function(req, res) {
+    const response = await controllerSV.deleteLead(req.query.id);
+    res.send(`${response}`);
+});
+
 module.exports = routerSV;
