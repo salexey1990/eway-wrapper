@@ -15,6 +15,11 @@ routerSV.get('/list', async function(req, res) {
     res.send(leads);
 });
 
+routerSV.get('/managers', async function(req, res) {
+    const managers = await controllerSV.getManagers(req.query);
+    res.send(managers);
+});
+
 routerSV.delete('/lead', async function(req, res) {
     const response = await controllerSV.deleteLead(req.query.id);
     res.send(`${response}`);

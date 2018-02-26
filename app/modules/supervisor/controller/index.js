@@ -6,6 +6,10 @@ module.exports = class ControllerSV {
         return await serviceSV.getLeads(params);
     }
 
+    async getManagers(params) {
+        return await serviceSV.getManagers(params);
+    }
+
     async deleteLead(id) {
         return await serviceSV.deleteLead(id);
     }

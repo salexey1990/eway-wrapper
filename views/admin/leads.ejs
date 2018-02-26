@@ -27,8 +27,9 @@
                         <td title="'Промо'" class="">{{item.promo}}</td>
                         <td title="'Кнопки/действия'" class="col-md-1">
                         <button class="btn btn-sm btn-success btn-block"
-                                ng-click="createLead(item)"
-                                title="Создать интерес"
+                                data-toggle="modal"
+                                data-target="#replenishModal"
+                                ng-click="pickLead(item)"
                         >Создать интерес</button>
                         <button class="btn btn-sm btn-danger btn-block"
                                 ng-click="deleteLead(item)"
@@ -39,4 +40,42 @@
                 </table>
             </div>
         </div>
+    <div class="modal inmodal" id="replenishModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <i class="fa fa-laptop modal-icon"></i>
+                <h4 class="modal-title">Создание интереса</h4>
+                <small class="font-bold">После подтверждения интерес будет создан в CRM системе</small>
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-title">Параметры интереса</h4>
+
+
+              <!-- REFUEL BEGIN -->
+              <div class="form-group">
+                <p>Создать интерес со следующими параметрами?</p>
+                <p>Имя: {{currentLead.name}}</p>
+                <p>Телефон: {{currentLead.phone}}</p>
+                <p>Почта: {{currentLead.email}}</p>
+                <p>Промо-код: {{currentLead.promo}}</p>
+                <label for="singleSelect">Выберите ответственного менеджера:</label>
+                <select name="singleSelect" id="singleSelect" ng-model="singleSelect">
+                    <option ng-repeat="item in managers" value="{{item}}">{{item.name}}</option>
+                  </select><br>
+              </div>
+              <!-- REFUEL END -->
+            </div>
+
+
+            <!-- REFUEL BEGIN -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Отмена</button>
+                <button type="button" title="Создать интерес" class="btn btn-warning" ng-click="createLead(currentLead)">Создать интерес</button>
+            </div>
+            <!-- REFUEL END -->
+          </div>
+        </div>
+      </div>
     </div>

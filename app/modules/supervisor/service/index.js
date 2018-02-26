@@ -1,10 +1,15 @@
-const LeadModel = require('../models/leads')
+const LeadModel = require('../models/leads');
+const ManagerModel = require('../models/managers');
 
 const lodash = require('lodash');
 
 module.exports = class ServiceSV {
     async getLeads(params) {
         return await LeadModel.findAll();
+    }
+
+    async getManagers(params) {
+        return await ManagerModel.findAll();
     }
 
     async deleteLead(id) {
