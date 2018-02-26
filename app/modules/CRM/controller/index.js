@@ -14,10 +14,6 @@ module.exports = class ControllerEW {
         return await serviceEW.getContactById(id);
     }
 
-    async webhook(params) {
-        return await serviceEW.webhook(params);
-    }
-
     async createLead(params) {
         return await serviceEW.createLead(params);
     }

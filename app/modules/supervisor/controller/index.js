@@ -8,5 +8,9 @@ module.exports = class ControllerSV {
 
     async deleteLead(id) {
         return await serviceSV.deleteLead(id);
-    } 
+    }
+
+    async createLead(params) {
+        return await serviceSV.createLead(params);
+    }
 }

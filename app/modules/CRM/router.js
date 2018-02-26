@@ -4,6 +4,9 @@ const routerEW = Router();
 const ControllerEW = require('./controller');
 const controllerEW = new ControllerEW();
 
+const ControllerSV = require('../supervisor/controller');
+const controllerSV = new ControllerSV();
+
 routerEW.get('/leads', async function(req, res) {
   const leads = await controllerEW.getLeads(req.query);
   res.send(leads);
@@ -20,7 +23,7 @@ routerEW.get('/contacts/:id', async function(req, res) {
 })
 
 routerEW.get('/webhook', async function(req, res) {
-  const response = await controllerEW.webhook(req.query);
+  const response = await controllerSV.createLead(req.query);
   res.send(response)
 })
 

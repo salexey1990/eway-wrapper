@@ -63,10 +63,6 @@ module.exports = class ServiceEW {
         return await wrapper.searchEntity('Contacts', find);
     }
 
-    async webhook(params) {
-        return await wrapper.saveEntity('Lead', params)
-    }
-
     async createLead(params) {
         return await wrapper.saveEntity('Lead', params)
     }
