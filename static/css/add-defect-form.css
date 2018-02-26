@@ -1,0 +1,43 @@
+.add-defect-photos {
+  font-size: 0;
+}
+
+.add-defect-photos > * {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  margin-top: 5px;
+
+  background-size: cover;
+}
+
+.add-defect-photo-placeholder {
+  border: 5px dashed lightgray;
+  cursor: pointer;
+}
+
+.add-defect-photo-placeholder > input {
+  display: none;
+}
+
+.add-defect-photo-placeholder:hover {
+  border-color: lightblue;
+}
+
+.add-defect-photo-placeholder:before {
+  content: '+';
+  display: block;
+  font-size: 100px;
+  color: lightgray;
+  width: 100%;
+  height: 100%;
+  line-height: 85px;
+  text-align: center;
+}
+
+.add-defect-photo-placeholder:hover:before {
+  color: lightblue;
+}

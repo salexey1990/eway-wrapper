@@ -1,0 +1,49 @@
+<% layout("./layouts/index") %>
+
+
+    <div class="wrapper wrapper-content clearfix" ng-controller="LeadsController">
+        <!-- <div>
+            <div class="row m-b">
+                <div class="form-horizontal">
+
+                    <div class="form-group">
+                        <label class="col-sm-3 col-md-2 col-lg-1 control-label">Найдено:</label>
+                        <div class="col-sm-9 col-md-10 col-lg-5">
+                            <strong class="form-control" disabled="disabled">{{tableParams.total()}}</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="overflow-x: auto; min-height: 400px;">
+                <table ng-table="tableParams" class="table">
+                    <tr ng-repeat="item in tableParams.data">
+                        <td class="">{{(tableParams.page() - 1) * tableParams.count() + ($index+1)}}</td>
+                        <td title="'Серийный номер'" class="">
+                            <a href="/stationdetails.html?id={{item.chargePointSerialNumber}}" target="_blank">{{item.chargePointSerialNumber}}</a>
+                        </td>
+                        <td title="'Статус'" class="">{{item.status}}</td>
+                        <td title="'Адрес зарядной станции'" class="">
+                            <div ng-if="item.chargePointLat">
+                                <div ng-if="item.address">
+                                    <a 
+                                    href="/stationsmap.html?id={{item._id}}" 
+                                    target="_blank"
+                                    >{{item.address}}</a>
+                                </div>
+                                <div ng-if="!item.address">
+                                    <button class="btn btn-sm btn-danger btn-block"
+                                        ng-click="getAddress(item._id, item.chargePointLat, item.chargePointLon)"
+                                        title="Загрузить адрес"
+                                    >Загрузить адрес</button>
+                                </div>
+                            </div>
+                            <div ng-if="!item.chargePointLat">
+                                Координаты станции отсутствуют
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> -->
+        hello world
+    </div>

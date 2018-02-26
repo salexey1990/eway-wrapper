@@ -1,0 +1,397 @@
+.yd-jumbotron .container {
+  position: relative;
+}
+
+.yd-vk-icon {
+  position: relative;
+  right: 2px;
+}
+
+.yd-logo-name {
+  font-size: 75px !important;
+}
+
+.yd-card-table tbody tr td{
+  vertical-align: middle;
+}
+
+.yd-card-table tbody tr td > i{
+  font-size: 25px;
+}
+
+.ok-logo-icon {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSItMjExLjUgMzU2LjggNDUgODAuOSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAtMjExLjUgMzU2LjggNDUgODAuOSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgdHJhbnNmb3JtPSJtYXRyaXgoLjEyNSAwIDAgLS4xMjUgMCAxMTUuNTM3KSI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTS0xNTExLjYtMjAyNy43YzM4LjIsMCw2OS4yLTMxLDY5LjItNjkuMmMwLTM4LjEtMzEtNjkuMi02OS4yLTY5LjJjLTM4LjEsMC02OS4yLDMxLTY5LjIsNjkuMkMtMTU4MC44LTIwNTguNy0xNTQ5LjgtMjAyNy43LTE1MTEuNi0yMDI3Ljd6IE0tMTUxMS42LTIyNjRjOTIuMiwwLDE2Ny4xLDc0LjksMTY3LjEsMTY3LjFjMCw5Mi4yLTc0LjksMTY3LjItMTY3LjEsMTY3LjJjLTkyLjIsMC0xNjcuMS03NS0xNjcuMS0xNjcuMkMtMTY3OC44LTIxODktMTYwMy44LTIyNjQtMTUxMS42LTIyNjQiLz48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNLTE0NDQtMjQwMC4zYzM0LDcuOCw2Ni44LDIxLjIsOTcuMSw0MC4yYzIyLjksMTQuNCwyOS44LDQ0LjYsMTUuNCw2Ny41Yy0xNC40LDIyLjktNDQuNiwyOS44LTY3LjUsMTUuNGMtNjguNS00My4xLTE1Ni42LTQzLTIyNSwwYy0yMi45LDE0LjQtNTMuMSw3LjUtNjcuNS0xNS40Yy0xNC40LTIyLjktNy41LTUzLjEsMTUuMy02Ny41YzMwLjItMTksNjMtMzIuNCw5Ny4xLTQwLjJsLTkzLjQtOTMuNGMtMTkuMS0xOS4xLTE5LjEtNTAuMSwwLTY5LjJjOS42LTkuNiwyMi4xLTE0LjMsMzQuNi0xNC4zYzEyLjUsMCwyNS4xLDQuOCwzNC42LDE0LjNsOTEuOCw5MS44bDkxLjktOTEuOGMxOS4xLTE5LjEsNTAuMS0xOS4xLDY5LjIsMGMxOS4xLDE5LjEsMTkuMSw1MC4xLDAsNjkuMkwtMTQ0NC0yNDAwLjMiLz48L2c+PC9zdmc+);
+	background-size: 10px 17px;
+	background-repeat: no-repeat;
+	height: 17px;
+	width: 10px;
+	vertical-align: middle;
+	position: relative;
+	bottom: 2px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+
+
+/*.btn-switch.btn-outline {
+  color: #ed5565;
+}
+.btn-switch.btn-outline:hover {
+  color: #fff;
+}*/
+.btn-switch {
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #FFFFFF;
+}
+.btn-switch:hover {
+  background-color: #f7a54a;
+  border-color: #f7a54a;
+  color: #FFFFFF;
+}
+
+.btn-switch-reverse {
+  background-color: #ed5565;
+  border-color: #ed5565;
+  color: #FFFFFF;
+}
+.btn-switch-reverse:hover {
+  background-color: #f7a54a;
+  border-color: #f7a54a;
+  color: #FFFFFF;
+}
+/*.btn-switch:active,
+.btn-switch.active,
+.open .dropdown-toggle.btn-switch {
+  background-image: none;
+}*/
+
+.clickable {
+  cursor: pointer;
+}
+
+.highlighted {
+  color: darkcyan;
+  background: lightgoldenrodyellow;
+}
+
+.list-group-item.equal-devices-highlighted {
+  background: #ffbbbb;
+}
+
+.yd-jsonview {
+  max-width: 100%;
+  overflow: auto;
+  max-height: 300px;
+  font-size: 10px;
+  border: 1px solid #e7eaec;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.yd-jsonview .na {
+  font-size: 13px;
+}
+
+/* DIALOGS */
+.yd-dialog-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content.yd-dialog-content {
+  margin-left: -150px;
+  border-radius: 4px 0 0 4px;
+  width: 100%;
+  box-shadow: none;
+  border: none;
+}
+
+.yd-dialog-content .modal-title .yd-dialog-refresh-button {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+}
+
+.yd-dialog-search {
+  display: block;
+  width: 300px;
+  position: absolute;
+  right: -150px;
+  background: white;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  border-left: 1px solid #e5e5e5;
+  z-index: 1;
+  padding-top: 51px;
+  overflow: hidden;
+}
+
+.yd-dialog-search .modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.yd-dialog-search .modal-body {
+  padding: 15px;
+  overflow: auto;
+  height: 100%;
+}
+
+.yd-dialog-search-list-item {
+  cursor: pointer;
+  white-space: pre-line;
+}
+
+.yd-dialog-search-list-item:hover {
+  background-color: #f5f5f5;
+  color: #676a6c;
+}
+
+
+.yd-dialog-modal-body.modal-body {
+  height: 400px;
+  overflow: auto;
+  background-color: #f8fafb;
+  padding: 20px 30px;
+}
+
+.yd-dialog-list-empty {
+  text-align: center;
+  height: 100%;
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+.yd-dialog-list-empty i.fa {
+  font-size: 100px;
+}
+
+.yd-dialog-list-item.feed-element {
+  position: relative;
+  padding-bottom: 0;
+}
+
+
+.yd-dialog-avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  color: white;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.yd-output .yd-dialog-avatar {
+  background-color: #1ab394;
+  margin-left: 10px;
+  float: right;
+}
+
+.yd-input .yd-dialog-avatar {
+  background-color: #ed5565;
+  margin-right: 10px;
+  float: left;
+}
+
+.yd-dialog-avatar-corner {
+  position: absolute;
+  display: block;
+
+  width: 10px;
+  height: 10px;
+  top: 0;
+
+  border: 1px solid #e7eaec;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 4px 0 0 0;
+
+  background-color: whitesmoke;
+}
+
+.yd-input .yd-dialog-avatar-corner {
+  transform: scaleX(1.5) skewX(45deg);
+  left: 55px;
+}
+
+.yd-output .yd-dialog-avatar-corner {
+  transform: scaleX(-1.5) skewX(45deg);
+  right: 55px;
+}
+
+
+.yd-dialog-media-body {
+  border: 1px solid #e7eaec;
+  box-shadow: none;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #f5f5f5;
+  min-height: 20px;
+  overflow: hidden;
+}
+
+.yd-input .yd-dialog-media-body {
+  border-radius: 0 4px 4px 4px;
+}
+
+.yd-output .yd-dialog-media-body {
+  border-radius: 4px 0 4px 4px;
+}
+
+.yd-dialog-well {
+  font-size: 13px;
+  margin-top: 5px;
+  white-space: pre-line;
+}
+
+.yd-dialog-attachments {
+  position: relative;
+  display: block;
+  font-size: 0;
+  background: #e7eaec;
+  border: 1px solid #e7eaec;
+  border-radius: 4px;
+  line-height: 0;
+  margin: 10px -5px 0;
+  padding: 5px;
+}
+
+.yd-dialog-attachment-icon {
+  position: absolute;
+  font-size: 80px;
+  transform: scale(-1, 1);
+  bottom: 5px;
+  right: 5px;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.yd-dialog-attachment-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 5px;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  width: 74px;
+  height: 74px;
+  overflow: hidden;
+}
+
+.yd-dialog-attachment-item:hover {
+  border-color: #1c84c6;
+}
+
+.yd-dialog-attachment-item > a,
+.yd-dialog-attachment-item > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform-origin: center;
+  transition: transform 0.6s;
+}
+
+.yd-dialog-attachment-item:hover > a,
+.yd-dialog-attachment-item:hover > span {
+  transform: scale(1.4);
+}
+
+.yd-dialog-attachment-item-remove {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  background-color: #cdcdcd;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  color: black;
+  font-size: 18px;
+  border-radius: 0 4px 0 4px;
+  opacity: 0.3;
+  z-index: 1;
+  cursor: pointer;
+  padding: 2px;
+  box-sizing: content-box;
+  border: 1px solid #a6a6a6;
+  border-top: none;
+  border-right: none;
+  transition: all 0.2s;
+}
+
+.yd-dialog-attachment-item-remove:hover {
+  opacity: 0.7;
+  border-color: #1c84c6;
+}
+
+
+.yd-dialog-form textarea {
+  width: 100% !important;
+}
+
+.yd-dialog-upload-attachments {
+  float: left;
+  margin: -5px;
+  text-align: left;
+  width: 340px;
+}
+
+.yd-dialog-upload-attachments .yd-dialog-attachment-item {
+}
+
+table.table-users > thead > tr > th {
+  min-width: 80px;
+}
+
+table.table-users > thead > tr > th.table-users__email {
+  min-width: 170px;
+}
+
+.table-loading {
+  opacity: 0.2;
+}
+
+.next-image {
+  visibility: hidden;
+}
+
+.selfies {
+  min-height: 1500px
+}
+
+.bill {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 600px;
+}
+
+.star-cash-voucher {
+  background: url(/static/img/star-gray.png) repeat-x 0% 0%;
+  height: 15px;
+  margin: 17px 0;
+}
+
+.form-group .promo-code {
+  font-size: 25px;
+  font-family: 'Source Code Pro', monospace;
+}
