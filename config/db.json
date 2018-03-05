@@ -1,8 +1,8 @@
 {
-    "username": "root",
-    "database": "supervisor",
+    "username": "mailruhh_tool",
+    "database": "mailruhh_tool",
     "host": "localhost",
     "dialect": "mysql",
-    "password": null,
+    "password": "123qwe",
     "benchmark": null
 }
