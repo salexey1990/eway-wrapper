@@ -5,7 +5,9 @@ const lodash = require('lodash');
 
 module.exports = class ServiceSV {
     async getLeads(params) {
-        return await LeadModel.findAll();
+        return await LeadModel.findAll({
+            order: [['date', 'DESC']]
+        });
     }
 
     async getManagers(params) {
@@ -21,6 +23,12 @@ module.exports = class ServiceSV {
     }
 
     async createLead(params) {
+        if (!params.visit) {
+            return {
+                status : "ok",
+                order_id : params.id
+            }
+        }
         const newLead = {
             date: params.created_date,
             resource: params.title || 'не известен',

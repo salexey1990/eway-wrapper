@@ -59,7 +59,12 @@
                 <p>Имя: {{currentLead.name}}</p>
                 <p>Телефон: {{currentLead.phone}}</p>
                 <p>Почта: {{currentLead.email}}</p>
-                <p>Промо-код: {{currentLead.promo}}</p>
+                <label>Промо-код лида:</label>
+                <input type="number"
+                       placeholder="{{currentLead.promo}}"
+                       class="form-control"
+                       ng-model="currentLead.promo"
+                       *step="0.01"* >
                 <label for="singleSelect">Выберите ответственного менеджера:</label>
                 <select name="singleSelect" id="singleSelect" ng-model="singleSelect">
                     <option ng-repeat="item in managers" value="{{item}}">{{item.name}}</option>
