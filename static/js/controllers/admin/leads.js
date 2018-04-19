@@ -34,7 +34,8 @@
         Email: lead.email,
         Phone: lead.phone,
         StateEn: "90c78af1-65ac-49e3-8e32-88f23b32ef03",
-        OwnerGUID: JSON.parse($scope.singleSelect).crm_id
+        OwnerGUID: JSON.parse($scope.singleSelect).crm_id,
+        Note: lead.comment
       }
       $modal.closeAll();
       $http.post(MEURL + '/lead', params)
