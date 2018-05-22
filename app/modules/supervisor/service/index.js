@@ -29,9 +29,10 @@ module.exports = class ServiceSV {
                 order_id : params.id
             }
         }
+        const resource = JSON.stringify(params)
         const newLead = {
             date: params.created_date,
-            resource: params.title || 'не известен',
+            resource: resource || 'не известен',
             comment: params.text || null,
             name: params.name || null,
             phone: params.phone || null,
