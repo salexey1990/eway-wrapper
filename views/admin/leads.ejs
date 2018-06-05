@@ -19,7 +19,8 @@
                     <tr ng-repeat="item in tableParams.data">
                         <td class="">{{(tableParams.page() - 1) * tableParams.count() + ($index+1)}}</td>
                         <td title="'Дата'" class="">{{item.date}}</td>
-                        <td title="'Русурс'" class="">{{item.resource}}</td>
+                        <td title="'Ресурс'" class="">{{item.resource}}</td>
+                        <td title="'Заголовок'" class="">{{item.title}}</td>
                         <td title="'Коментарий'" class="">{{item.comment}}</td>
                         <td title="'Имя'" class="">{{item.name}}</td>
                         <td title="'Телефон'" class="">{{item.phone}}</td>
