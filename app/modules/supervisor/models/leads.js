@@ -19,6 +19,10 @@ module.exports = Leads =
         type: Sequelize.STRING,
         allowNull: false
     },
+    title: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     comment: {
         type: Sequelize.STRING,
         allowNull: true
