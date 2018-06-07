@@ -29,17 +29,20 @@
         $notify.handlerError('Не выбран менеджер');
         return;
       }
+      console.log(lead)
       const params = {
         FileAs: lead.promo,
         Email: lead.email,
         Phone: lead.phone,
         StateEn: "90c78af1-65ac-49e3-8e32-88f23b32ef03",
         OwnerGUID: JSON.parse($scope.singleSelect).crm_id,
-        Note: `${lead.name}\r\n${lead.comment}`
+        Note: `${lead.name}\r\n${lead.comment}`,
+        LeadOriginEn: lead.resource
       }
       $modal.closeAll();
       $http.post(MEURL + '/lead', params)
         .success(function(data) {
+          console.log(data)
           if (data.ReturnCode == 'rcSuccess') {
             showMessage('Интерес успешно создан в CRM', 'Выполнено')
             deleteLead(lead);
