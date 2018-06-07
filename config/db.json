@@ -1,8 +1,0 @@
-{
-    "username": "mailruhh_tool",
-    "database": "mailruhh_tool",
-    "host": "localhost",
-    "dialect": "mysql",
-    "password": "123qwe",
-    "benchmark": null
-}
