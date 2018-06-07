@@ -64,6 +64,10 @@ module.exports = class ServiceEW {
     }
 
     async createLead(params) {
-        return await wrapper.saveEntity('Lead', params)
+        try {
+            return await wrapper.saveEntity('Lead', params)
+        } catch (error) {
+            return error;
+        }
     }
 }

@@ -29,7 +29,7 @@
         $notify.handlerError('Не выбран менеджер');
         return;
       }
-      console.log(lead)
+
       const params = {
         FileAs: lead.promo,
         Email: lead.email,
@@ -39,6 +39,7 @@
         Note: `${lead.name}\r\n${lead.comment}`,
         LeadOriginEn: lead.resource
       }
+      console.log(params)
       $modal.closeAll();
       $http.post(MEURL + '/lead', params)
         .success(function(data) {
