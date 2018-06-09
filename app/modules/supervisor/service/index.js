@@ -65,14 +65,18 @@ module.exports = class ServiceSV {
             email: params.email || null,
             promo: params.visit || null
         }
-        const res = await LeadModel.create(newLead);
-        if (res) {
-            return {
-                status : "ok",
-                order_id : params.id
+        try {
+            const res = await LeadModel.create(newLead);
+            if (res) {
+                return {
+                    status : "ok",
+                    order_id : params.id
+                }
+            } else {
+                return null;
             }
-        } else {
-            return null;
+        } catch (error) {
+            return error;
         }
     }
 }
