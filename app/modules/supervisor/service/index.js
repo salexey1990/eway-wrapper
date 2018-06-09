@@ -29,7 +29,7 @@ module.exports = class ServiceSV {
                 order_id : params.id
             }
         }
-        let resource;
+        let resource = 'Email';
         if (params.title.indexOf('Звонок') != -1) {
             resource = '8800'
         } else if (params.title.indexOf('Пойманный лид') != -1) {
@@ -52,13 +52,11 @@ module.exports = class ServiceSV {
             resource = 'Inst'
         } else if (params.data && JSON.parse(params.data).marker == 'Контакты') {
             resource = 'Contacts'
-        } else {
-            resource = 'Email'
         }
         const newLead = {
             date: params.created_date,
             title: params.title || 'не известен',
-            resource: resource || 'не известен',
+            resource: resource,
             comment: params.text || null,
             name: params.name || null,
             phone: params.phone || null,
