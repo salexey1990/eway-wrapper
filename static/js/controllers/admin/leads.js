@@ -37,7 +37,7 @@
         StateEn: "90c78af1-65ac-49e3-8e32-88f23b32ef03",
         OwnerGUID: JSON.parse($scope.singleSelect).crm_id,
         Note: `${lead.name}\r\n${lead.comment}`,
-        LeadOriginEn: lead.resource
+        // LeadOriginEn: lead.resource ToDo: разобраться как создать в eWay источник заявки
       }
       console.log(params)
       $modal.closeAll();
